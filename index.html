@@ -13,6 +13,8 @@
 
 <body>
   <div class="main">
+
+    <!-- Sidebar -->
     <div class="sidebar">
       <div class="nav">
         <div class="nav-option" style="opacity:1;">
@@ -47,24 +49,136 @@
             <p class="box-p1">Let's find some podcast to follow</p>
             <p class="box-p2">We'll keep you updated on new episodes</p>
             <button class="badge">Browse podcasts</button>
-        </div>
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- Main Content -->
     <div class="main-content">
-        <div class="sticky-nav">
-            <div class="sticky-nav-icons">
-                <img src="media/backward_icon.png">
-                <img src="media/forward_icon.png" alt="" class="hide">
-            </div>
-            <div class="sticky-nav-options">
-                <button class="badge nav-item hide">Explore Premium</button>
-                <button class="badge nav-item dark-badge"><i class="fa-regular fa-circle-down" style="margin-right:5px"></i> install App</button>
-                <i class="fa-solid fa-user nav-item"></i>
-            </div>
+
+      <!-- Sticky Navbar -->
+      <div class="sticky-nav">
+        <div class="sticky-nav-icons">
+          <img src="media/backward_icon.png" alt="Back">
+          <img src="media/forward_icon.png" alt="Forward" class="hide">
         </div>
-    <div class="music-player">C</div>
+        <div class="sticky-nav-options">
+          <button class="badge nav-item hide">Upgrade</button>
+          <button class="badge nav-item dark-badge">
+            <i class="fa-regular fa-circle-down" style="margin-right: 5px;"></i>Install App
+          </button>
+          <i class="fa-regular fa-user"></i>
+        </div>
+      </div>
+
+      <!-- Sections -->
+      <h2>Recently Played</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="media/card1img.jpeg" class="card-img" alt="Recently Played">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played ...</p>
+        </div>
+      </div>
+
+      <h2>Trending now near you</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="media/card2img.jpeg" class="card-img" alt="Trending">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="media/card3img.jpeg" class="card-img" alt="Trending">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="media/card4img.jpeg" class="card-img" alt="Trending">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="media/card7img.jpeg" class="card-img" alt="Trending">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="media/card8img.jpeg" class="card-img" alt="Trending">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+      </div>
+
+      <h2>Featured Charts</h2>
+      <div class="cards-container">
+        <div class="card">
+          <img src="media/card5img.jpeg" class="card-img" alt="Charts">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="media/card6img.jpeg" class="card-img" alt="Charts">
+          <p class="card-title">Top Songs - India</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+        <div class="card">
+          <img src="media/card1img.jpeg" class="card-img" alt="Charts">
+          <p class="card-title">Top 50 - Global</p>
+          <p class="card-info">Your daily updates of the most played...</p>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="footer">
+        <div class="line"></div>
+      </div>
+    </div>
+  </div> <!-- End of .main -->
+
+  <!-- Music Player (Moved Outside of .main) -->
+  <div class="music-player">
+    <div class="album">
+      <img src="/media/card2img.jpeg" alt="Cover" />
+      <div class="album-text">
+        <p>Mahiye Kinna Sona</p>
+        <p> <i class="fa-regular fa-heart"></i>
+          Arijit Singh</p>
+      </div>
+    </div>
+    
+    
+    <div class="player">
+      <div class="player-controls">
+        <img src="media/player_icon1.png" class="player-control-icon">
+        <img src="media/player_icon2.png" class="player-control-icon">
+        <img src="media/player_icon3.png" class="player-control-icon" style="opacity:1;height:2rem">
+        <img src="media/player_icon4.png" class="player-control-icon">
+        <i class="fa-solid fa-headset"></i>
+      </div>
+      <div class="playback-bar">
+        <span class="curr-time">00:00</span>
+        <input type="range" min="0" max="100" class="progress-bar" step="1">
+        <span class="tot-time">03:30</span>
+      </div>
+    </div>
+
+    <div class="advanced-controls">
+      <div class="play-icon-container">
+        <i class="fa-solid fa-play play-icon"></i>
+        <div class="green-dot"></div>
+      </div>
+      <i class="fa-solid fa-microphone"></i>
+      <i class="fa-solid fa-bars"></i>
+      <i class="fa-solid fa-tablet-screen-button"></i>
+      <input type="range" min="0" max="100" value="50" class="volume-slider">
+      <i class="fa-solid fa-display"></i>
+    </div>
+    
+    
+    
   </div>
+
 </body>
 </html>
