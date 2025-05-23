@@ -379,7 +379,7 @@
     border-radius: 50%;
     background:#1bd760;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    margin-top: -8px;
+    margin-top: -10px;
   }
   
   .volume-slider::-webkit-slider-thumb {
