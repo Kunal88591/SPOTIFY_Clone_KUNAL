@@ -379,7 +379,7 @@
     border-radius: 50%;
     background:#1bd760;
     box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-    margin-top: -10px;
+    margin-top: -8px;
   }
   
   .volume-slider::-webkit-slider-thumb {
@@ -388,7 +388,7 @@
     width: 1rem;
     background-color: #1bd760;
     border-radius: 50%;
-    margin-top: -6px;
+    margin-top: -7px;
     cursor: pointer;
   }
 
